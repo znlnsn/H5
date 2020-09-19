@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head>
+<style>
+.flex {
+    display: flex;
+    flex-flow: row inwrap;
+    justify-content: flex-start;
+    /*default value*/
+}
+.flex.center {
+    justify-content: center;
+}
+.flex.end {
+    justify-content: flex-end;
+}
+.flex.spb {
+    justify-content: space-between;
+}
+.flex.spa {
+    justify-content: space-around;
+}
+.item {
+    width: 80px;
+    box-sizing: border-box;
+}
+/* other styles just for format */
+
+.flex {
+    background: #333;
+    margin-bottom: 10px;
+}
+.item {
+    padding: 5px;
+    background: #999;
+    text-align: center;
+}
+span {
+    position: absolute;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript" src="https://wow.techbrood.com/libs/jquery/jquery-2.1.1.min.js"></script><p class="label start">flex-start:</p>
+<div class="flex">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+
+<p class="label center">center:</p>
+<div class="flex center">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+
+<p class="label end">flex-end:</p>
+<div class="flex end">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+
+<p class="label space-between">space-between:</p>
+<div class="flex spb">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+
+<p class="label space-around">space-around:</p>
+<div class="flex spa">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+<script>
+/* CSS3 弹性容器justify-content主轴方向对齐属性测试 */
+</script>
+
+</body>
+</html>
